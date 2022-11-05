@@ -42,9 +42,10 @@ public class Main {
 
         Downhill speedyDown = new Downhill(function, epsilon, startX, startY);
 
-        Pair res = speedyDown.calculateExtr();
-        System.out.println(res.getA());
-        System.out.println(res.getB());
+        Pair<Double, Double> res = speedyDown.calculateExtr();
+        System.out.println("x1: " + res.getA());
+        System.out.println("x2: " + res.getB());
+        System.out.println("f(x1, x2): " + function.getValueAtPoint(res.getA(), res.getB()));
 
     }
 }

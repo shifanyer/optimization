@@ -37,9 +37,13 @@ public class Downhill {
             double newX = x + lambda * grad.getA() / gradLen;
             double newY = y + lambda * grad.getB() / gradLen;
 
+            double oldVal = function.getValueAtPoint(x, y);
+            double newVal = function.getValueAtPoint(newX, newY);
+
             x = newX;
             y = newY;
 
+            if (Math.abs(oldVal - newVal) < epsilon) break;
         }
 
         return new Pair(x, y);
