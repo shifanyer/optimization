@@ -1,5 +1,6 @@
 package com.company;
 
+import com.company.function.Function;
 import com.company.function.Function2;
 import com.company.function.Pair;
 import com.company.method.*;
@@ -8,7 +9,7 @@ public class Main {
 
     public static void main(String[] args) {
 //        lab 1
-        /*
+
 
         Function function = new Function();
         double leftPoint = -3;
@@ -19,11 +20,13 @@ public class Main {
         Method goldenSplit = new GoldenSplit(function, leftPoint, rightPoint, epsilon);
         Method chordsMethod = new ChordsMethod(function, leftPoint, rightPoint, epsilon);
         Method newtonMethod = new NewtonMethod(function, leftPoint, rightPoint, epsilon);
+        Method squareInterpol = new SquareInterpol(function, leftPoint, rightPoint, epsilon);
 
         System.out.println(dihotomyHandler.calculateMinimum().getB());
         System.out.println(goldenSplit.calculateMinimum().getB());
         System.out.println(chordsMethod.calculateMinimum().getB());
         System.out.println(newtonMethod.calculateMinimum().getB());
+//        System.out.println(squareInterpol.calculateMinimum().getB());
 
         System.out.println();
 
@@ -31,10 +34,12 @@ public class Main {
         System.out.println(goldenSplit.calculateMaximum().getB());
         System.out.println(chordsMethod.calculateMaximum().getB());
         System.out.println(newtonMethod.calculateMaximum().getB());
+        System.out.println(squareInterpol.calculateMaximum().getB());
 
-         */
+
 
 //        lab2
+/*
         Function2 function = new Function2();
         double epsilon = 0.05;
         double startX = 0;
@@ -46,6 +51,8 @@ public class Main {
         System.out.println("x1: " + res.getA());
         System.out.println("x2: " + res.getB());
         System.out.println("f(x1, x2): " + function.getValueAtPoint(res.getA(), res.getB()));
+
+ */
 
     }
 }
